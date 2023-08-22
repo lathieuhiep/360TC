@@ -1,11 +1,20 @@
 <header class="header">
-	<div class="header__top d-flex align-items-center justify-content-between">
-		@@include('../components/socials.html')
-		
-		@@include('../components/top-nav.html')
+	<div class="header__top container">
+		<a href="index.html" class="logo">
+			<img src="@@webRoot/assets/images/logo.png" alt="logo">
+		</a>
+
+		<form class="form-search">
+			<input type="text" class="form-control" name="keyword" aria-label="">
+
+			<button type="submit" class="btn btn-search">
+				<span>Tìm kiếm</span>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
+		</form>
 	</div>
 	
-	<div class="header__menu">
+	<div class="header__menu container">
 		@@include('../components/main-nav.html')
 	</div>
 </header>

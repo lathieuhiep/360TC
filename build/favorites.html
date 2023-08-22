@@ -22,82 +22,22 @@
 
 <body>
 <header class="header">
-	<div class="header__top d-flex align-items-center justify-content-between">
-		<ul class="list-social reset-list">
-			<li class="list-social__item">
-				<a href="#">
-					<i class="fa-brands fa-facebook-f"></i>
-				</a>
-			</li>
-	
-			<li class="list-social__item">
-				<a href="#">
-					<i class="fa-brands fa-twitter"></i>
-				</a>
-			</li>
-	
-			<li class="list-social__item">
-				<a href="#">
-					<i class="fa-brands fa-linkedin-in"></i>
-				</a>
-			</li>
-	
-			<li class="list-social__item">
-				<a href="#">
-					<i class="fa-brands fa-pinterest-p"></i>
-				</a>
-			</li>
-	
-			<li class="list-social__item">
-				<a href="#">
-					<i class="fa-brands fa-youtube"></i>
-				</a>
-			</li>
-	
-			<li class="list-social__item">
-				<a href="#">
-					<i class="fa-brands fa-vimeo-v"></i>
-				</a>
-			</li>
-	
-			<li class="list-social__item">
-				<a href="#">
-					<i class="fa-brands fa-instagram"></i>
-				</a>
-			</li>
-	
-			<li class="list-social__item">
-				<a href="#">
-					<i class="fa-brands fa-foursquare"></i>
-				</a>
-			</li>
-		</ul>
-		
-		<ul class="top-nav reset-list">
-			<li class="top-nav__item">
-				<a href="./favorites.html">
-					<i class="fa-solid fa-heart"></i>
-					Favorites
-				</a>
-			</li>
-	
-			<li class="top-nav__item">
-				<a href="mailto:contact@mail.com">
-					<i class="fa-regular fa-envelope"></i>
-					contact@mail.com
-				</a>
-			</li>
-	
-			<li class="top-nav__item">
-				<a href="tel:+14081671234">
-					<i class="fa-regular fa-envelope"></i>
-					+1 408 167 1234
-				</a>
-			</li>
-		</ul>
+	<div class="header__top container">
+		<a href="index.html" class="logo">
+			<img src="./assets/images/logo.png" alt="logo">
+		</a>
+
+		<form class="form-search">
+			<input type="text" class="form-control" name="keyword" aria-label="">
+
+			<button type="submit" class="btn btn-search">
+				<span>Tìm kiếm</span>
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
+		</form>
 	</div>
 	
-	<div class="header__menu">
+	<div class="header__menu container">
 		<nav class="navbar navbar-header">
 			<div class="left">
 				<a class="logo d-flex align-items-center" href="#">

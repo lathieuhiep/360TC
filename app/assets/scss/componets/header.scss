@@ -1,35 +1,5 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  
-  &__top {
-    padding: 0 5.5rem;
-    border-bottom: 1px solid $border-color-second;
-    
-    ul {
-      display: flex;
-    }
-  }
-  
-  .list-social {
-    a {
-      padding: 0.9rem 1.6rem;
-      display: inline-block;
-      color: $color-white;
-      border-right: 1px solid $border-color-second;
-    }
-    
-    li {
-      &:first-child {
-        a {
-          border-left: 1px solid $border-color-second;
-        }
-      }
-    }
-  }
+  &__top {}
 }
 
 .navbar-header {
