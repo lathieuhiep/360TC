@@ -8,7 +8,7 @@
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="./assets/icons/css/font-awesome.min.css">
@@ -22,69 +22,68 @@
 
 <body>
 <header class="header">
-	<div class="header__top container">
-		<a href="index.html" class="logo">
-			<img src="./assets/images/logo.png" alt="logo">
-		</a>
+	<div class="container">
+		<div class="header__top">
+			<a href="index.html" class="logo">
+				<img src="./assets/images/logo.png" alt="logo">
+			</a>
 
-		<form class="form-search">
-			<input type="text" class="form-control" name="keyword" aria-label="">
+			<form class="form-search">
+				<input type="text" class="form-control" name="keyword" placeholder="Tìm nội dung, tiêu chuẩn, định mức liên quan..." aria-label="">
 
-			<button type="submit" class="btn btn-search">
-				<span>Tìm kiếm</span>
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</button>
-		</form>
-	</div>
-	
-	<div class="header__menu container">
-		<nav class="navbar navbar-header">
-			<div class="left">
-				<a class="logo d-flex align-items-center" href="#">
-					<img src="./assets/images/transparentopt.png" alt="logo">
-				</a>
-		
-				<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fa-regular fa-bars"></i>
+				<button type="submit" class="btn btn-search">
+					<span>Tìm kiếm</span>
+					<i class="fa-solid fa-magnifying-glass"></i>
 				</button>
+			</form>
+
+			<div class="user-action">
+				<a class="user-action__link radius-5 fs-14 fw-600" href="#">ĐĂNG KÍ</a>
+				<a class="user-action__link radius-5 fs-14 fw-600" href="#">ĐĂNG NHẬP</a>
 			</div>
-	
-			<div class="menu d-lg-block collapse navbar-collapse" id="menu">
-				<ul>
+		</div>
+
+		<div class="header__menu radius-5">
+			<nav class="navbar navbar-header p-0 h-100">
+				<ul class="reset-list d-flex">
 					<li>
-						<a href="#">Nhà đất bán</a>
+						<a href="index.html">Trang chủ</a>
 					</li>
-			
+
 					<li>
-						<a href="#">Nhà đất cho thuê</a>
+						<a href="#">Đặt hàng</a>
 					</li>
-			
+
 					<li>
-						<a href="#">Dự án</a>
+						<a href="#">Khuyến mãi</a>
 					</li>
-			
+
 					<li>
-						<a href="#">Tin tức</a>
+						<a href="#">Sản phẩm</a>
 					</li>
-			
+
 					<li>
-						<a href="#">Wiki BĐS</a>
+						<a href="#">Hỗ trợ</a>
 					</li>
-			
+
 					<li>
-						<a href="#">Phong thủy</a>
+						<a href="#">Hướng dẫn</a>
 					</li>
-			
+
 					<li>
-						<a href="#">Nội - Ngoại thất</a>
+						<a href="#">Đào tạo</a>
 					</li>
-			
+
 					<li>
-						<a href="#">Danh bạ</a>
+						<a href="#">Tin hoạt động</a>
+					</li>
+
+					<li>
+						<a href="#">Liên hệ</a>
 					</li>
 				</ul>
-			</div>
-		</nav>
+			</nav>
+		</div>
 	</div>
 </header>
 

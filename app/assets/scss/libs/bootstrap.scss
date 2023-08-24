@@ -26,7 +26,7 @@ $grid-gutter-width: 2.4rem;
 //
 // Style anchor elements.
 $link-color: $color-link;
-$link-hover-color: $color-hover;
+$link-hover-color: $color-red;
 $link-decoration: none;
 
 // scss-docs-end caret-variables
@@ -64,8 +64,8 @@ $container-max-widths: (
 		sm: 100%,
 		md: 100%,
 		lg: 100%,
-		xl: 1140px,
-		xxl: 1224px
+		xl: 1224px,
+		xxl: 1314px
 ) !default;
 
 // Include remainder of required Bootstrap stylesheets

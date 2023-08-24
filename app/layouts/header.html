@@ -1,21 +1,28 @@
 <header class="header">
-	<div class="header__top container">
-		<a href="index.html" class="logo">
-			<img src="@@webRoot/assets/images/logo.png" alt="logo">
-		</a>
+	<div class="container">
+		<div class="header__top">
+			<a href="index.html" class="logo">
+				<img src="@@webRoot/assets/images/logo.png" alt="logo">
+			</a>
 
-		<form class="form-search">
-			<input type="text" class="form-control" name="keyword" aria-label="">
+			<form class="form-search">
+				<input type="text" class="form-control" name="keyword" placeholder="Tìm nội dung, tiêu chuẩn, định mức liên quan..." aria-label="">
 
-			<button type="submit" class="btn btn-search">
-				<span>Tìm kiếm</span>
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</button>
-		</form>
-	</div>
-	
-	<div class="header__menu container">
-		@@include('../components/main-nav.html')
+				<button type="submit" class="btn btn-search">
+					<span>Tìm kiếm</span>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</form>
+
+			<div class="user-action">
+				<a class="user-action__link radius-5 fs-14 fw-600" href="#">ĐĂNG KÍ</a>
+				<a class="user-action__link radius-5 fs-14 fw-600" href="#">ĐĂNG NHẬP</a>
+			</div>
+		</div>
+
+		<div class="header__menu radius-5">
+			@@include('../components/main-nav.html')
+		</div>
 	</div>
 </header>
 
