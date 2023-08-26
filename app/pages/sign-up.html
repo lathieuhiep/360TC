@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('../components/head_global.html', { "title": "Đăng kí" })
+
+  <!-- Style Home Page -->
+  <link rel="stylesheet" href="@@webRoot/assets/css/pages/sign.css">
+</head>
+
+<body class="page-template">
+@@include('../layouts/header.html')
+
+<div class="sticky-footer">
+  <div class="slides" style="height: 50rem">
+    <div class="container">
+      Slides
+    </div>
+  </div>
+
+  <div class="sign-warp">
+    <div class="container">
+      <form id="sign-up" class="form-sign">
+        <h2 class="form-sign__title fs-24 fw-bold">
+          ĐĂNG KÝ
+        </h2>
+
+        <div class="group-control">
+          <label for="fullName" class="form-label">Họ và tên</label>
+          <input id="fullName" type="text" class="form-control" name="full_name">
+        </div>
+
+        <div class="group-control">
+          <label for="phone" class="form-label">Số điện thoại</label>
+          <input id="phone" type="text" class="form-control" name="phone">
+        </div>
+
+        <div class="group-control">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" type="email" class="form-control" name="email">
+        </div>
+
+        <div class="action-box">
+          <button type="submit" class="btn btn-submit transition-400">ĐĂNG KÝ</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+@@include('../layouts/footer.html')
+</body>
+</html>

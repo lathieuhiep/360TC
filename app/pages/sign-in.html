@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('../components/head_global.html', { "title": "Đăng nhập" })
+
+  <!-- Style Home Page -->
+  <link rel="stylesheet" href="@@webRoot/assets/css/pages/sign.css">
+</head>
+
+<body class="page-template">
+@@include('../layouts/header.html')
+
+<div class="sticky-footer">
+  <div class="slides" style="height: 50rem">
+    <div class="container">
+      Slides
+    </div>
+  </div>
+
+  <div class="sign-warp">
+    <div class="container">
+      <form id="sign-in" class="form-sign">
+        <h2 class="form-sign__title fs-24 fw-bold">
+          ĐĂNG NHẬP
+        </h2>
+
+        <div class="group-control">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" type="email" class="form-control" name="email">
+        </div>
+
+        <div class="group-control">
+          <label for="password" class="form-label">Mật khẩu</label>
+          <input id="password" type="password" class="form-control" name="password">
+        </div>
+
+        <div class="group-control form-check form-check-save p-0 d-flex">
+          <label class="form-check-label" for="saveLogin">
+            Lưu đăng nhập
+          </label>
+
+          <input id="saveLogin" class="form-check-input float-none ms-3 rounded-0" type="checkbox" value="">
+        </div>
+
+        <div class="action-box">
+          <a id="forgot-password" href="#" class="d-inline-block mb-5 fs-14">Quên mật khẩu?</a>
+
+          <button type="submit" class="btn btn-submit transition-400">ĐĂNG NHẬP</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+@@include('../layouts/footer.html')
+</body>
+</html>

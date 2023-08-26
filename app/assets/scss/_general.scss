@@ -17,6 +17,7 @@ body {
 }
 
 .sticky-footer {
+  position: relative;
   padding-top: 1.6rem;
   flex: 1 0 auto;
   overflow-x: hidden;
@@ -93,11 +94,41 @@ pre {
   border-radius: .5rem;
 }
 
-.fs-14 {
+.fs-14,
+.form-label {
   font-size: 1.4rem;
   line-height: 2.4rem;
 }
 
+.fs-24 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
 .fw-600 {
   font-weight: 600;
+}
+
+.transition-400 {
+  @include transition();
+}
+
+.form-control {
+  padding: 0.9rem 1.2rem;
+  border-color: $color-light-gray-2;
+  border-radius: 0;
+}
+
+
+
+#scroll-top-page {
+  position: fixed;
+  right: 6rem;
+  bottom: 6rem;
+  @include square(6rem, 50%);
+  background-color: $color-red;
+
+  &:hover {
+    background-color: $color-slightly-blue;
+  }
 }

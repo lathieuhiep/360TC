@@ -101,8 +101,6 @@ async function compressLibraryJsMin() {
 // task build js page
 async function buildJsTemplate() {
     return await src(`${pathRoot}assets/js/**/*.js`, {allowEmpty: true})
-        .pipe(uglify())
-        .pipe(rename( {suffix: '.min'} ))
         .pipe(dest(`${pathDestBuild}assets/js/`))
         .pipe(browserSync.stream());
 }
@@ -118,6 +116,7 @@ async function optimizeImages() {
         .pipe(dest(imgDst))
         .pipe(browserSync.stream());
 }
+exports.optimizeImages = optimizeImages
 
 // Task include HTML
 async function includeHTML() {

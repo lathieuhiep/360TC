@@ -1,9 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bất động sản - Đăng nhập</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="./assets/icons/css/font-awesome.min.css">
+
+  <!-- Library CSS -->
+  <link rel="stylesheet" href="./assets/css/libs/bootstrap.min.css">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Style Home Page -->
+  <link rel="stylesheet" href="./assets/css/pages/sign.css">
+</head>
+
+<body class="page-template">
+<header class="header">
+	<div class="container">
+		<div class="header__top">
+			<a href="index.html" class="logo">
+				<img src="./assets/images/logo.png" alt="logo">
+			</a>
+
+			<form class="form-search">
+				<input type="text" class="form-control" name="keyword" placeholder="Tìm nội dung, tiêu chuẩn, định mức liên quan..." aria-label="">
+
+				<button type="submit" class="btn btn-search">
+					<span>Tìm kiếm</span>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</form>
+
+			<div class="user-action">
+				<a class="user-action__link radius-5 fs-14 fw-600" href="sign-up.html">ĐĂNG KÍ</a>
+				<a class="user-action__link radius-5 fs-14 fw-600" href="sign-in.html">ĐĂNG NHẬP</a>
+			</div>
+		</div>
+
+		<div class="header__menu radius-5">
+			<nav class="navbar navbar-header p-0 h-100">
+				<ul class="reset-list d-flex">
+					<li>
+						<a href="index.html">Trang chủ</a>
+					</li>
+
+					<li>
+						<a href="#">Đặt hàng</a>
+					</li>
+
+					<li>
+						<a href="#">Khuyến mãi</a>
+					</li>
+
+					<li>
+						<a href="#">Sản phẩm</a>
+					</li>
+
+					<li>
+						<a href="#">Hỗ trợ</a>
+					</li>
+
+					<li>
+						<a href="#">Hướng dẫn</a>
+					</li>
+
+					<li>
+						<a href="#">Đào tạo</a>
+					</li>
+
+					<li>
+						<a href="#">Tin hoạt động</a>
+					</li>
+
+					<li>
+						<a href="#">Liên hệ</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+
+
+<div class="sticky-footer">
+  <div class="slides" style="height: 50rem">
+    <div class="container">
+      Slides
+    </div>
+  </div>
+
+  <div class="sign-warp">
+    <div class="container">
+      <form id="sign-in" class="form-sign">
+        <h2 class="form-sign__title fs-24 fw-bold">
+          ĐĂNG NHẬP
+        </h2>
+
+        <div class="group-control">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" type="email" class="form-control" name="email">
+        </div>
+
+        <div class="group-control">
+          <label for="password" class="form-label">Mật khẩu</label>
+          <input id="password" type="password" class="form-control" name="password">
+        </div>
+
+        <div class="group-control form-check form-check-save p-0 d-flex">
+          <label class="form-check-label" for="saveLogin">
+            Lưu đăng nhập
+          </label>
+
+          <input id="saveLogin" class="form-check-input float-none ms-3 rounded-0" type="checkbox" value="">
+        </div>
+
+        <div class="action-box">
+          <a id="forgot-password" href="#" class="d-inline-block mb-5 fs-14">Quên mật khẩu?</a>
+
+          <button type="submit" class="btn btn-submit transition-400">ĐĂNG NHẬP</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 <footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
                 <div class="widget widget-media">
-                    <img src="@@webRoot/assets/images/logo-footer.png" alt="logo">
+                    <img src="./assets/images/logo-footer.png" alt="logo">
                 </div>
 
                 <div class="widget widget-info-company">
@@ -172,7 +308,7 @@
                     <h2 class="widget-title">CHÚNG TÔI TRÊN FACEBOOK</h2>
 
                     <div class="widget-content">
-                        <img src="@@webRoot/assets/images/fanpage-facebook.png">
+                        <img src="./assets/images/fanpage-facebook.png">
                     </div>
                 </div>
 
@@ -193,8 +329,10 @@
 </button>
 
 <!-- jquery lib -->
-<script src="@@webRoot/assets/js/libs/jquery.min.js"></script>
+<script src="./assets/js/libs/jquery.min.js"></script>
 <!-- bootstrap javascript -->
-<script src="@@webRoot/assets/js/libs/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/libs/bootstrap.bundle.min.js"></script>
 <!-- jquery template -->
-<script src="@@webRoot/assets/js/main.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

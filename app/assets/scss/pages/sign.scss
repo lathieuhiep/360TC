@@ -1,0 +1,55 @@
+@import "../abstracts/abstracts";
+
+.sign-warp {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.form-sign {
+  margin: 0 auto;
+  padding: 3rem;
+  max-width: 63rem;
+  width: 100%;
+  border: 1px solid $color-light-gray;
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  .group-control {
+    ~ .group-control {
+      margin-top: .8rem;
+    }
+
+    &.form-check-save {
+      margin-top: 1.6rem;
+    }
+  }
+
+  .form-check-label {
+    font-size: 1.4rem;
+  }
+
+  .action-box {
+    margin-top: 2.8rem;
+
+    a {
+      color: $color-slightly-blue;
+    }
+
+    .btn-submit {
+      padding: 1rem 1.2rem;
+      color: $color-white;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+      width: 100%;
+      border-radius: 0;
+      background-color: $color-red;
+
+      &:hover {
+        background-color: $color-slightly-blue;
+      }
+    }
+  }
+}

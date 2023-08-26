@@ -17,36 +17,76 @@
       margin-top: 4rem;
     }
 
-    &.widget-info-company {
-      .name {
-        margin-bottom: 1rem;
-        font-size: 2.4rem;
-        line-height: 3.4rem;
+    .widget-title {
+      margin-bottom: 3rem;
+      font-size: 1.8rem;
+      line-height: 4rem;
+    }
+  }
+
+  .widget-info-company {
+    .name {
+      margin-bottom: 1rem;
+      font-size: 2.4rem;
+      line-height: 3.4rem;
+    }
+
+    .tax-code {
+      margin-bottom: 3.4rem;
+
+      span {
+        display: inline-block;
+
+        &.space {
+          margin: 0 1.2rem;
+        }
+      }
+    }
+
+    ul {
+      li {
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: 2.7rem 1fr;
+
+        ~ li {
+          margin-top: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .widget-branch {
+    &__list {
+      ~ .widget-branch__list {
+        margin-top: 3rem;
       }
 
-      .tax-code {
-        margin-bottom: 3.4rem;
-
-        span {
-          display: inline-block;
-
-          &.space {
-            margin: 0 1.2rem;
-          }
-        }
+      .name-branch {
+        font-size: 1.6rem;
+        line-height: 4rem;
       }
 
       ul {
         li {
           display: grid;
           grid-gap: 1.5rem;
-          grid-template-columns: 2.7rem 1fr;
+          grid-template-columns: 1.8rem 1fr;
 
           ~ li {
-            margin-top: 2.4rem;
+            margin-top: 1.6rem;
+          }
+
+          .phone {
+            font-weight: 600;
           }
         }
       }
     }
+  }
+
+  .widget-copyright {
+    padding: 2.2rem 2.4rem 2.2rem 3rem;
+    background-color: rgba(255,255,255,0.1);
   }
 }
