@@ -3,7 +3,9 @@
 <head>
   @@include('../components/head_global.html', { "title": "Đăng nhập" })
 
-  <!-- Style Home Page -->
+  <!-- Style swiper -->
+  <link rel="stylesheet" href="@@webRoot/assets/css/libs/swiper-bundle.min.css">
+  <!-- Style sign Page -->
   <link rel="stylesheet" href="@@webRoot/assets/css/pages/sign.css">
 </head>
 
@@ -11,9 +13,9 @@
 @@include('../layouts/header.html')
 
 <div class="sticky-footer">
-  <div class="slides" style="height: 50rem">
+  <div class="slides">
     <div class="container">
-      Slides
+      @@include('../components/slider-second.html')
     </div>
   </div>
 
@@ -53,5 +55,8 @@
 </div>
 
 @@include('../layouts/footer.html')
+<!-- jquery lib -->
+<script src="@@webRoot/assets/js/libs/swiper-bundle.min.js"></script>
+<script src="@@webRoot/assets/js/slider-second.js"></script>
 </body>
 </html>

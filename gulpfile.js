@@ -54,7 +54,8 @@ async function buildFontawesomeWebFonts() {
 // Task buildSCSSLibs
 async function buildCSSLibs() {
     return await src([
-        `${pathRoot}assets/scss/libs/*.scss`
+        `${pathRoot}assets/scss/libs/*.scss`,
+        './node_modules/swiper/swiper-bundle.css',
     ])
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(minifyCss({
@@ -64,6 +65,7 @@ async function buildCSSLibs() {
         .pipe(dest(`${pathDestBuild}assets/css/libs`))
         .pipe(browserSync.stream());
 }
+exports.buildCSSLibs = buildCSSLibs
 
 // Task build styles
 async function buildStyle() {
@@ -90,13 +92,14 @@ async function compressLibraryJsMin() {
     return await src([
         './node_modules/jquery/dist/jquery.js',
         './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-        './node_modules/owl.carousel/dist/owl.carousel.js',
+        './node_modules/swiper/swiper-bundle.js',
     ], {allowEmpty: true})
         .pipe(uglify())
         .pipe(rename( {suffix: '.min'} ))
         .pipe(dest(`${pathDestBuild}assets/js/libs`))
         .pipe(browserSync.stream());
 }
+exports.compressLibraryJsMin = compressLibraryJsMin
 
 // task build js page
 async function buildJsTemplate() {
