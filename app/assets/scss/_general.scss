@@ -90,6 +90,11 @@ pre {
   }
 }
 
+.ptb-30 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .radius-5 {
   border-radius: .5rem;
 }
@@ -119,7 +124,14 @@ pre {
   border-radius: 0;
 }
 
-
+.slider-main {
+  .swiper-pagination-bullets {
+    &.swiper-pagination-horizontal {
+      top: auto;
+      bottom: 5.7rem;
+    }
+  }
+}
 
 #scroll-top-page {
   position: fixed;

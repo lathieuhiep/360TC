@@ -69,13 +69,16 @@ exports.buildCSSLibs = buildCSSLibs
 
 // Task build styles
 async function buildStyle() {
-    return await src(`${pathRoot}assets/scss/style.scss`)
+    return await src([
+        `${pathRoot}assets/scss/style.scss`
+    ])
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(dest(`${pathDestBuild}assets/css`))
         .pipe(browserSync.stream());
 }
+exports.buildStyle = buildStyle
 
 // Task build styles pages
 async function buildStylePages() {
@@ -86,6 +89,18 @@ async function buildStylePages() {
         .pipe(dest(`${pathDestBuild}assets/css/pages`))
         .pipe(browserSync.stream());
 }
+exports.buildStylePages = buildStylePages
+
+// Task build styles components
+async function buildStyleComponents() {
+    return await src(`${pathRoot}assets/scss/components/*.scss`)
+      .pipe(sourcemaps.init())
+      .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+      .pipe(sourcemaps.write())
+      .pipe(dest(`${pathDestBuild}assets/css/components`))
+      .pipe(browserSync.stream());
+}
+exports.buildStyleComponents = buildStyleComponents
 
 // Task compress lib js & mini file
 async function compressLibraryJsMin() {
@@ -140,6 +155,7 @@ async function buildApp() {
     await buildCSSLibs()
     await buildStyle()
     await buildStylePages()
+    await buildStyleComponents()
     await compressLibraryJsMin()
     await buildJsTemplate()
     await optimizeImages()
@@ -160,6 +176,7 @@ function watchTask() {
         `!${pathRoot}assets/scss/pages/*.scss`
     ], buildStyle)
     watch(`${pathRoot}assets/scss/pages/*.scss`, buildStylePages)
+    watch(`${pathRoot}assets/scss/components/*.scss`, buildStyleComponents)
 
     // watch js
     watch(`${pathRoot}assets/js/**/*.js`, buildJsTemplate)

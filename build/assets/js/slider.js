@@ -2,10 +2,12 @@
   "use strict";
 
   $(document).ready( () => {
-    var swiper = new Swiper(".mySwiper", {
+    new Swiper(".slider-main", {
       pagination: {
         el: ".swiper-pagination",
+        clickable: true,
       },
     });
   } )
+
 })(jQuery)

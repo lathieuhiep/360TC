@@ -1,0 +1,186 @@
+@import "../abstracts/abstracts";
+
+.sidebar {
+  .widget {
+    ~ .widget {
+      margin-top: 4rem;
+    }
+
+    &__line {
+      position: relative;
+      margin-bottom: 1rem;
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 93%;
+        height: .2rem;
+        top: 50%;
+        right: 0;
+        background-color: $color-primary;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__container {
+      padding: 3rem 3rem 4rem;
+      background-color: #F9F9F9;
+
+      .heading {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+      }
+    }
+
+    .group-info {
+      background-color: $color-white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+      ~ .group-info {
+        margin-top: 1rem;
+      }
+
+      &__item {
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+
+        > div {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        .icon {
+          text-align: center;
+          border-right: 1px solid #F0F0F0;
+        }
+
+        .phone {
+          font-weight: 700;
+        }
+
+        .txt {
+          padding-left: 1.8rem;
+          padding-right: 1.8rem;
+        }
+
+        .txt-name {
+          color: #7D7D7D;
+        }
+
+        .txt-address {
+          color: #7D7D7D;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .widget-title {
+    margin-bottom: .5rem;
+    font-size: 1.8rem;
+  }
+
+  .category-widget {
+    padding: 3rem 3rem 3.6rem;
+    background-color: rgba(111, 143, 201, 0.9);
+    background-image: url("/assets/images/bk-category-widget.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .widget-title {
+      margin-bottom: 2rem;
+      color: $color-white;
+    }
+
+    .menu {
+      li {
+        position: relative;
+        padding-left: 2rem;
+
+        &:before {
+          position: absolute;
+          content: "";
+          top: 1.2rem;
+          left: 0;
+          width: .5rem;
+          height: .2rem;
+          background-color: $color-white;
+        }
+
+        ~ li {
+          margin-top: 1.6rem;
+        }
+      }
+
+      a {
+        color: $color-white;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .partner-information-widget {
+    .thumbnail {
+      position: relative;
+      margin-bottom: 2rem;
+
+      .name {
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: rgba(0,0,0,0.4);
+      }
+    }
+
+    .info-detail {
+      display: grid;
+      grid-gap: 1.8rem;
+      grid-template-columns: 5rem 1fr;
+
+      &__avatar {
+        img {
+          width: 5rem;
+          height: 6.8rem;
+          object-fit: cover;
+        }
+      }
+
+      &__txt {
+        p {
+          margin-bottom: 0;
+        }
+
+        .organization {
+          color: #8D8D8D;
+          font-family: $font-second;
+        }
+
+        .organ {
+          font-size: 1.8rem;
+          color: #0E7636;
+          font-family: $font-second;
+        }
+
+        .international-name {
+          font-size: 0.8rem;
+          color: #5C5C5C;
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .agency-widget {
+    .thumbnail {
+      margin-bottom: 1rem;
+    }
+  }
+}
