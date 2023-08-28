@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>360TC - Đặt hàng</title>
+  <title>360TC - Danh mục bài viết</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +24,10 @@
   <!-- Style sidebar -->
   <link rel="stylesheet" href="./assets/css/components/sidebar.css">
   <!-- Style Home Page -->
-  <link rel="stylesheet" href="./assets/css/pages/order.css">
+  <link rel="stylesheet" href="./assets/css/pages/category.css">
 </head>
 
-<body class="page-template">
+<body class="page-template page-template-category">
 <header class="header">
 	<div class="container">
 		<div class="header__top">
@@ -119,7 +119,7 @@
     </div>
   </div>
 
-  <div class="order-warp ptb-30">
+  <div class="category-warp ptb-30">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -484,109 +484,218 @@
 
         <div class="col-md-9">
           <h2 class="title-page-line fs-18">
-            ĐẶT HÀNG PHẦN MỀM
+            Bài viết
           </h2>
 
-          <form class="form-order">
-            <!-- name + organ -->
-            <div class="row row-cols-sm-2 form-order__control">
-              <div class="col">
-                <label for="fullName" class="form-label">
-                  Họ và tên <span class="required">*</span>
-                </label>
-
-                <input type="text" id="fullName" class="form-control" placeholder="Nhập họ và tên" name="full_name" required>
+          <div class="posts">
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-1.png" alt="">
               </div>
 
-              <div class="col">
-                <label for="organ" class="form-label">
-                  Cơ quan
-                </label>
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">Phần mềm Dự tóan F1 tổ chức hội thảo cho sinh viên đại học</a>
+                </h3>
 
-                <input type="text" id="organ" class="form-control" placeholder="Nhập cơ quan" name="organ">
-              </div>
-            </div>
+                <p class="excerpt">
+                  Trường đại học Công nghệ Đồng Nai hợp tác chương trình Doanh nghiệp và nhà trường
+                </p>
 
-            <!-- phone + address -->
-            <div class="row row-cols-sm-2 form-order__control">
-              <div class="col">
-                <label for="phone" class="form-label">
-                  Số điện thoại <span class="required">*</span>
-                </label>
-
-                <input type="text" id="phone" class="form-control" placeholder="Nhập số điện thoại" name="phone" required>
-              </div>
-
-              <div class="col">
-                <label for="address" class="form-label">
-                  Địa chỉ <span class="required">*</span>
-                </label>
-
-                <input type="text" id="address" class="form-control" placeholder="Nhập địa chỉ" name="address" required>
+                <a class="link-detail fs-14 fw-600 text-decoration-underline" href="post.html">CHI TIẾT</a>
               </div>
             </div>
 
-            <!-- email + product + province -->
-            <div class="row row-cols-sm-3 form-order__control">
-              <div class="col">
-                <label for="email" class="form-label">
-                  Email khách hàng <span class="required">*</span>
-                </label>
-
-                <input type="text" id="email" class="form-control" placeholder="Nhập email" name="email" required>
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-2.png" alt="">
               </div>
 
-              <div class="col">
-                <label for="productList" class="form-label">
-                  Danh sách sản phẩm <span class="required">*</span>
-                </label>
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">Nhật ký thi công tự động miễn phí và hướng dẫn tất cả</a>
+                </h3>
 
-                <select id="productList" class="form-select" name="product" required>
-                  <option value="" selected>Chọn danh mục sản phẩm</option>
-                  <option value="1">Sản phẩm 1</option>
-                  <option value="2">Sản phẩm 2</option>
-                  <option value="3">Sản phẩm 3</option>
-                </select>
-              </div>
-
-              <div class="col">
-                <label for="province" class="form-label">
-                  Tỉnh thành <span class="required">*</span>
-                </label>
-
-                <select id="province" class="form-select" name="province" required>
-                  <option value="" selected>Chọn tỉnh thành</option>
-                  <option value="1">Tỉnh 1</option>
-                  <option value="2">Tỉnh 2</option>
-                  <option value="3">Tỉnh 3</option>
-                </select>
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
               </div>
             </div>
 
-            <!-- content -->
-            <div class="form-order__control">
-              <label for="contentOrder" class="form-label">Nội dung</label>
-              <textarea id="contentOrder" class="form-control" rows="3" name="content-order"></textarea>
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-3.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">Hướng dẫn sử dụng chức năng phần mềm VIẾT NHẬT KÝ TỰ</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
             </div>
 
-            <div class="form-order__control action-box">
-              <button type="submit" class="btn btn-submit transition-400">ĐẶT HÀNG</button>
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-4.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">Hướng dẫn sử dụng chức năng phần mềm VIẾT NHẬT KÝ TỰ</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
             </div>
-          </form>
 
-          <div class="quote">
-            <div class="quote__thumbnail">
-              <img src="./assets/images/logo-quote.png" alt="">
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-5.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">Tiêu chuẩn thi công và nghiệm thu mặt đường bê tông</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
             </div>
 
-            <div class="quote__info">
-              <h3 class="title fs-24">
-                Báo giá phần mềm nghiệm thu xây dựng
-              </h3>
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-6.png" alt="">
+              </div>
 
-              <p class="content fs-14">
-                Báo giá phần mềm nghiệm thu, hoàn công, QLCL, nhật ký, tiến độ
-              </p>
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">Bộ Xây dựng hướng dẫn một số nội dung về quản lý chi phí</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
+            </div>
+
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-7.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">Hướng dẫn sử dụng chức năng phần mềm VIẾT NHẬT KÝ TỰ</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
+            </div>
+
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-8.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">22. Hướng dẫn tạo và xuất số số liệu thanh toán</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
+            </div>
+
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-9.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">20. Nhập số liệu tầng xuất thí nghiệm vật liệu vào nghiệm</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
+            </div>
+
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-10.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">13. Hướng dẫn nhập file excel, thao tác với phần thanh</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
+            </div>
+
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-11.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">13. Hướng dẫn nhập file excel, thao tác với phần thanh</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
+            </div>
+
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-12.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">Hướng dẫn đăng Hồ Sơ Dự Thầu qua mạng mới nhất</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
+            </div>
+
+            <div class="post-item">
+              <div class="thumbnail">
+                <img src="./assets/images/post/post-13.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="name">
+                  <a href="post.html">Xác định chi phí chung của công tác xây lắp đường dây</a>
+                </h3>
+
+                <p class="excerpt">
+                  Phần mềm: Nghiệm thu xây dựng
+                </p>
+              </div>
             </div>
           </div>
         </div>

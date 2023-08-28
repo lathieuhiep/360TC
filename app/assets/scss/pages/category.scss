@@ -1,0 +1,52 @@
+@import "../abstracts/abstracts";
+
+.page-template-category {
+  .title-page-line {
+    margin-bottom: 3rem;
+  }
+
+  .posts {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .post-item {
+    .info {
+      .name {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
+    }
+
+    &:first-child {
+      grid-column: 1 / span 3;
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-columns: 50% 1fr;
+      align-items: center;
+
+      .excerpt {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .excerpt {
+      font-size: 1.4rem;
+      color: $color-dark-gray-2;
+    }
+
+    &:not(:first-child) {
+      border: 1px solid $color-light-gray-4;
+
+      .thumbnail {
+        padding: 1rem 1.2rem 2rem;
+      }
+
+      .info {
+        padding: 1rem 2rem 2rem;
+      }
+    }
+  }
+}

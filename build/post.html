@@ -24,10 +24,10 @@
   <!-- Style sidebar -->
   <link rel="stylesheet" href="./assets/css/components/sidebar.css">
   <!-- Style Home Page -->
-  <link rel="stylesheet" href="./assets/css/pages/order.css">
+  <link rel="stylesheet" href="./assets/css/pages/post.css">
 </head>
 
-<body class="page-template">
+<body class="page-template page-template-post">
 <header class="header">
 	<div class="container">
 		<div class="header__top">
@@ -119,7 +119,7 @@
     </div>
   </div>
 
-  <div class="order-warp ptb-30">
+  <div class="post-warp ptb-30">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -484,111 +484,9 @@
 
         <div class="col-md-9">
           <h2 class="title-page-line fs-18">
-            ĐẶT HÀNG PHẦN MỀM
+            CHI TIẾT BÀI VIẾT
           </h2>
 
-          <form class="form-order">
-            <!-- name + organ -->
-            <div class="row row-cols-sm-2 form-order__control">
-              <div class="col">
-                <label for="fullName" class="form-label">
-                  Họ và tên <span class="required">*</span>
-                </label>
-
-                <input type="text" id="fullName" class="form-control" placeholder="Nhập họ và tên" name="full_name" required>
-              </div>
-
-              <div class="col">
-                <label for="organ" class="form-label">
-                  Cơ quan
-                </label>
-
-                <input type="text" id="organ" class="form-control" placeholder="Nhập cơ quan" name="organ">
-              </div>
-            </div>
-
-            <!-- phone + address -->
-            <div class="row row-cols-sm-2 form-order__control">
-              <div class="col">
-                <label for="phone" class="form-label">
-                  Số điện thoại <span class="required">*</span>
-                </label>
-
-                <input type="text" id="phone" class="form-control" placeholder="Nhập số điện thoại" name="phone" required>
-              </div>
-
-              <div class="col">
-                <label for="address" class="form-label">
-                  Địa chỉ <span class="required">*</span>
-                </label>
-
-                <input type="text" id="address" class="form-control" placeholder="Nhập địa chỉ" name="address" required>
-              </div>
-            </div>
-
-            <!-- email + product + province -->
-            <div class="row row-cols-sm-3 form-order__control">
-              <div class="col">
-                <label for="email" class="form-label">
-                  Email khách hàng <span class="required">*</span>
-                </label>
-
-                <input type="text" id="email" class="form-control" placeholder="Nhập email" name="email" required>
-              </div>
-
-              <div class="col">
-                <label for="productList" class="form-label">
-                  Danh sách sản phẩm <span class="required">*</span>
-                </label>
-
-                <select id="productList" class="form-select" name="product" required>
-                  <option value="" selected>Chọn danh mục sản phẩm</option>
-                  <option value="1">Sản phẩm 1</option>
-                  <option value="2">Sản phẩm 2</option>
-                  <option value="3">Sản phẩm 3</option>
-                </select>
-              </div>
-
-              <div class="col">
-                <label for="province" class="form-label">
-                  Tỉnh thành <span class="required">*</span>
-                </label>
-
-                <select id="province" class="form-select" name="province" required>
-                  <option value="" selected>Chọn tỉnh thành</option>
-                  <option value="1">Tỉnh 1</option>
-                  <option value="2">Tỉnh 2</option>
-                  <option value="3">Tỉnh 3</option>
-                </select>
-              </div>
-            </div>
-
-            <!-- content -->
-            <div class="form-order__control">
-              <label for="contentOrder" class="form-label">Nội dung</label>
-              <textarea id="contentOrder" class="form-control" rows="3" name="content-order"></textarea>
-            </div>
-
-            <div class="form-order__control action-box">
-              <button type="submit" class="btn btn-submit transition-400">ĐẶT HÀNG</button>
-            </div>
-          </form>
-
-          <div class="quote">
-            <div class="quote__thumbnail">
-              <img src="./assets/images/logo-quote.png" alt="">
-            </div>
-
-            <div class="quote__info">
-              <h3 class="title fs-24">
-                Báo giá phần mềm nghiệm thu xây dựng
-              </h3>
-
-              <p class="content fs-14">
-                Báo giá phần mềm nghiệm thu, hoàn công, QLCL, nhật ký, tiến độ
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>

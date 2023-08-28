@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('../components/head_global.html', { "title": "Đặt hàng" })
+
+  <!-- Style swiper -->
+  <link rel="stylesheet" href="@@webRoot/assets/css/libs/swiper-bundle.min.css">
+  <!-- Style sidebar -->
+  <link rel="stylesheet" href="@@webRoot/assets/css/components/sidebar.css">
+  <!-- Style Home Page -->
+  <link rel="stylesheet" href="@@webRoot/assets/css/pages/post.css">
+</head>
+
+<body class="page-template page-template-post">
+@@include('../layouts/header.html')
+
+<div class="sticky-footer">
+  <div class="slides">
+    <div class="container">
+      @@include('../components/slider.html')
+    </div>
+  </div>
+
+  <div class="post-warp ptb-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          @@include('../components/sidebar.html')
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="title-page-line fs-18">
+            CHI TIẾT BÀI VIẾT
+          </h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@@include('../layouts/footer.html')
+<!-- jquery lib -->
+<script src="@@webRoot/assets/js/libs/swiper-bundle.min.js"></script>
+<script src="@@webRoot/assets/js/slider.js"></script>
+</body>
+</html>
