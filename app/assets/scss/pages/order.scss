@@ -1,4 +1,10 @@
+@import "../abstracts/abstracts";
+
 .order-warp {
+	.title-page-line {
+		margin-bottom: 6.8rem;
+	}
+
 	.form-order {
 		> div {
 			&:not(:last-child) {
@@ -8,6 +14,36 @@
 
 		.form-label {
 			font-weight: 500;
+		}
+	}
+
+	.quote {
+		margin-top: 4rem;
+		padding-top: 3rem;
+		border-top: 1px solid $color-light-gray-3;
+		display: grid;
+		grid-gap: 3rem;
+		grid-template-columns: 28rem 1fr;
+		align-items: center;
+
+		&__thumbnail {
+			padding: 1.8rem;
+			text-align: center;
+			border: 1px solid $color-dark-gray-3;
+
+			img {
+				display: inline-block;
+			}
+		}
+
+		&__info {
+			.title {
+				margin-bottom: 1rem;
+			}
+
+			.content {
+				color: $color-dark-gray-2;
+			}
 		}
 	}
 }

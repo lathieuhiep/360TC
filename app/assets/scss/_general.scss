@@ -106,6 +106,10 @@ pre {
   line-height: 2.4rem;
 }
 
+.fs-18 {
+  font-size: 1.8rem;
+}
+
 .fs-24 {
   font-size: 2.4rem;
   line-height: 3rem;
@@ -160,4 +164,9 @@ pre {
   &:hover {
     background-color: $color-slightly-blue;
   }
+}
+
+.title-page-line {
+  padding-left: 1.2rem;
+  border-left: 2px solid $color-red;
 }
