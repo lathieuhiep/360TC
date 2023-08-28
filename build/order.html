@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bất động sản - Đặt hàng</title>
+  <title>360TC - Đặt hàng</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=League+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Gothic&display=swap" rel="stylesheet">
 
   <!-- FontAwesome -->
   <link rel="stylesheet" href="./assets/icons/css/font-awesome.min.css">
@@ -482,7 +482,98 @@
           </aside>
         </div>
 
-        <div class="col-md-9"></div>
+        <div class="col-md-9">
+          <h2 class="title-page-line">
+            ĐẶT HÀNG PHẦN MỀM
+          </h2>
+
+          <form class="form-order">
+            <!-- name + organ -->
+            <div class="row row-cols-sm-2 form-order__control">
+              <div class="col">
+                <label for="fullName" class="form-label">
+                  Họ và tên <span class="required">*</span>
+                </label>
+
+                <input type="text" id="fullName" class="form-control" placeholder="Nhập họ và tên" name="full_name" required>
+              </div>
+
+              <div class="col">
+                <label for="organ" class="form-label">
+                  Cơ quan
+                </label>
+
+                <input type="text" id="organ" class="form-control" placeholder="Nhập cơ quan" name="organ">
+              </div>
+            </div>
+
+            <!-- phone + address -->
+            <div class="row row-cols-sm-2 form-order__control">
+              <div class="col">
+                <label for="phone" class="form-label">
+                  Số điện thoại <span class="required">*</span>
+                </label>
+
+                <input type="text" id="phone" class="form-control" placeholder="Nhập số điện thoại" name="phone" required>
+              </div>
+
+              <div class="col">
+                <label for="address" class="form-label">
+                  Địa chỉ <span class="required">*</span>
+                </label>
+
+                <input type="text" id="address" class="form-control" placeholder="Nhập địa chỉ" name="address" required>
+              </div>
+            </div>
+
+            <!-- email + product + province -->
+            <div class="row row-cols-sm-3 form-order__control">
+              <div class="col">
+                <label for="email" class="form-label">
+                  Email khách hàng <span class="required">*</span>
+                </label>
+
+                <input type="text" id="email" class="form-control" placeholder="Nhập email" name="email" required>
+              </div>
+
+              <div class="col">
+                <label for="productList" class="form-label">
+                  Danh sách sản phẩm <span class="required">*</span>
+                </label>
+
+                <select id="productList" class="form-select" name="product" required>
+                  <option value="" selected>Chọn danh mục sản phẩm</option>
+                  <option value="1">Sản phẩm 1</option>
+                  <option value="2">Sản phẩm 2</option>
+                  <option value="3">Sản phẩm 3</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="province" class="form-label">
+                  Tỉnh thành <span class="required">*</span>
+                </label>
+
+                <select id="province" class="form-select" name="province" required>
+                  <option value="" selected>Chọn tỉnh thành</option>
+                  <option value="1">Tỉnh 1</option>
+                  <option value="2">Tỉnh 2</option>
+                  <option value="3">Tỉnh 3</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- content -->
+            <div class="form-order__control">
+              <label for="contentOrder" class="form-label">Nội dung</label>
+              <textarea id="contentOrder" class="form-control" rows="3" name="content-order"></textarea>
+            </div>
+
+            <div class="form-order__control action-box">
+              <button type="submit" class="btn btn-submit transition-400">ĐẶT HÀNG</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

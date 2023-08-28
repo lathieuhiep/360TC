@@ -36,21 +36,6 @@
     a {
       color: $color-slightly-blue;
     }
-
-    .btn-submit {
-      padding: 1rem 1.2rem;
-      color: $color-white;
-      text-align: center;
-      font-size: 1.4rem;
-      font-weight: 600;
-      width: 100%;
-      border-radius: 0;
-      background-color: $color-red;
-
-      &:hover {
-        background-color: $color-slightly-blue;
-      }
-    }
   }
 }
 

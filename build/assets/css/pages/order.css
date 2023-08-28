@@ -1,2 +1,7 @@
-
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJvcmRlci5jc3MiLCJzb3VyY2VzQ29udGVudCI6W119 */
+.order-warp .form-order > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.order-warp .form-order .form-label {
+  font-weight: 500;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm9yZGVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0c7RUFDQzs7QUFJRjtFQUNDIiwiZmlsZSI6Im9yZGVyLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5vcmRlci13YXJwIHtcclxuXHQuZm9ybS1vcmRlciB7XHJcblx0XHQ+IGRpdiB7XHJcblx0XHRcdCY6bm90KDpsYXN0LWNoaWxkKSB7XHJcblx0XHRcdFx0bWFyZ2luLWJvdHRvbTogMnJlbTtcclxuXHRcdFx0fVxyXG5cdFx0fVxyXG5cclxuXHRcdC5mb3JtLWxhYmVsIHtcclxuXHRcdFx0Zm9udC13ZWlnaHQ6IDUwMDtcclxuXHRcdH1cclxuXHR9XHJcbn0iXX0= */
