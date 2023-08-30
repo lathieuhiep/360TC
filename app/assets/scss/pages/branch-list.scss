@@ -1,0 +1,14 @@
+@import "../abstracts/abstracts";
+
+.branch-list {
+  &__item {
+    border: 1px solid $color-dark-gray-3;
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+
+    .left-box {
+      padding: 3rem 0 2.7rem;
+      border-right: 1px solid $color-light-gray-3;
+    }
+  }
+}
