@@ -1,14 +1,66 @@
-.element-banner {
-  position: relative;
-  
-  &:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.72;
-    background-image: linear-gradient(180deg,#053A63 0%,#01111B 100%);
+@import "../abstracts/abstracts";
+
+.product-list {
+  &__item {
+    padding: 3rem 3rem 3rem 4rem;
+    display: grid;
+    grid-gap: 3rem 4.8rem;
+    grid-template-columns: 24.1rem 1fr;
+    border: 1px solid #ECECEC;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    .item-info {
+      .name {
+        margin-bottom: 1rem;
+        font-size: 2.4rem;
+      }
+
+      .vote {
+        margin-bottom: 2rem;
+      }
+
+      .note {
+        margin-top: 2rem;
+        padding: 1.6rem;
+        color: #1D8215;
+        background-color: #EEFFE6;
+        display: grid;
+        grid-gap: 1.2rem;
+        grid-template-columns: auto 1fr;
+        border-radius: .5rem;
+      }
+
+      .action-box {
+        margin-top: 2rem;
+
+        .link {
+          display: inline-block;
+          font-weight: 600;
+
+          ~ .link {
+            margin-left: 1.2rem;
+          }
+        }
+
+        .has-bk-icon {
+          padding: .8rem 3.3rem .8rem 2.6rem;
+          min-height: 4.4rem;
+          color: $color-white;
+          text-align: center;
+          border-radius: .5rem;
+        }
+
+        .link-download {
+          background-color: #6F8FC9;
+        }
+
+        .link-order {
+          background-color: $color-red;
+        }
+      }
+    }
   }
 }

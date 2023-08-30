@@ -1,0 +1,74 @@
+@import "../abstracts/abstracts";
+
+.products {
+  &__item {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 28rem 1fr;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #E9E9E9;
+    }
+
+    .info {
+      &__name {
+        margin-bottom: .5rem;
+        font-size: 1.8rem;
+        line-height: 3.4rem;
+      }
+
+      &__price {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $color-red;
+
+        span {
+          ~ span {
+            margin-left: 2rem;
+          }
+        }
+
+        del {
+          margin-left: 3rem;
+          color: #7592C7;
+        }
+      }
+
+      &__excerpts {
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        color: $color-dark-gray-2;
+      }
+
+      &__action {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+
+        .link {
+          display: inline-block;
+          font-weight: 600;
+        }
+
+        .has-bk-icon {
+          padding: .8rem 3.3rem .8rem 2.6rem;
+          min-height: 4.4rem;
+          color: $color-white;
+          text-align: center;
+          border-radius: .5rem;
+        }
+
+        .link-download {
+          background-color: #6F8FC9;
+        }
+
+        .link-order {
+          background-color: $color-red;
+        }
+      }
+    }
+  }
+}

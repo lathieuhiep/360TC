@@ -1,0 +1,65 @@
+@import "../abstracts/abstracts";
+
+.branch-warp {
+  .branch-info {
+    color: $color-dark-gray-2;
+    font-size: 1.4rem;
+
+    p {
+      margin-bottom: 0;
+
+      ~ p {
+        margin-top: .6rem;
+      }
+    }
+
+    &__item {
+      display: grid;
+      grid-gap: 1.5rem;
+      grid-template-columns: 2rem 1fr;
+
+      &:not(:last-child) {
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+
+  .branch-list {
+    &__item {
+      border: 1px solid $color-dark-gray-3;
+      display: grid;
+      grid-template-columns: 25rem 1fr;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      > div {
+        padding: 3rem 3rem 2.7rem;
+      }
+
+      .left-box {
+        text-align: center;
+        border-right: 1px solid $color-light-gray-3;
+
+        .name {
+          font-size: 1.6rem;
+          color: $color-red;
+        }
+      }
+    }
+  }
+
+  .contact-info {
+    &__form {
+      max-width: 63.9rem;
+      width: 100%;
+      margin: 0 auto;
+
+      .btn-submit {
+        padding: 1.2rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

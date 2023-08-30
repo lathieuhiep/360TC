@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('../components/head_global.html', { "title": "Sản phẩm" })
+
+  <!-- Style swiper -->
+  <link rel="stylesheet" href="@@webRoot/assets/css/libs/swiper-bundle.min.css">
+  <!-- Style sidebar -->
+  <link rel="stylesheet" href="@@webRoot/assets/css/components/sidebar.css">
+  <!-- Style Home Page -->
+  <link rel="stylesheet" href="@@webRoot/assets/css/pages/products.css">
+</head>
+
+<body class="page-template">
+@@include('../layouts/header.html')
+
+<div class="sticky-footer">
+  <div class="slides">
+    <div class="container">
+      @@include('../components/slider.html')
+    </div>
+  </div>
+
+  <div class="category-product-warp pt-30 pb-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          @@include('../components/sidebar.html')
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="title-page-line mb-30 fs-18">
+            SẢN PHẨM
+          </h2>
+
+          <div class="products">
+            <div class="products__item">
+              <div class="thumbnail">
+                <img src="@@webRoot/assets/images/products/product-1.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="info__name">
+                  <a href="#">PHẦN MỀM NGHIỆM THU 360 - HOÀN CÔNG - QLCL - BẢN 2019</a>
+                </h3>
+
+                <div class="info__price">
+                  <span class="txt-price">Giá:</span>
+                  <span class="current-price">4,000,000</span>
+                  <del class="advance-price">6,000,000 VNĐ</del>
+                </div>
+
+                <div class="info__excerpts">
+                  Phần mềm nghiệm thu xây dựng 360 cho kết quả chính xác, dễ sử dụng, dùng thử 30 ngày...
+                </div>
+
+                <div class="info__action">
+                  <a class="link link-download has-bk-icon" href="#" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                      <path d="M13.3339 17.4287C13.3536 17.4539 13.3788 17.4743 13.4076 17.4883C13.4364 17.5024 13.468 17.5096 13.5 17.5096C13.532 17.5096 13.5636 17.5024 13.5924 17.4883C13.6212 17.4743 13.6464 17.4539 13.6661 17.4287L16.6192 13.6925C16.7273 13.5554 16.6298 13.3523 16.4531 13.3523H14.4993V4.42969C14.4993 4.31367 14.4044 4.21875 14.2884 4.21875H12.7063C12.5903 4.21875 12.4954 4.31367 12.4954 4.42969V13.3497H10.5469C10.3702 13.3497 10.2727 13.5527 10.3808 13.6898L13.3339 17.4287ZM23.1504 16.5059H21.5684C21.4523 16.5059 21.3574 16.6008 21.3574 16.7168V20.7773H5.64258V16.7168C5.64258 16.6008 5.54766 16.5059 5.43164 16.5059H3.84961C3.73359 16.5059 3.63867 16.6008 3.63867 16.7168V21.9375C3.63867 22.4042 4.01572 22.7812 4.48242 22.7812H22.5176C22.9843 22.7812 23.3613 22.4042 23.3613 21.9375V16.7168C23.3613 16.6008 23.2664 16.5059 23.1504 16.5059Z" fill="white"/>
+                    </svg>
+
+                    <span>TẢI BỘ CÀI</span>
+                  </a>
+
+                  <a class="link link-order has-bk-icon" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20" fill="none">
+                      <path d="M1 4.21714e-05C0.734784 4.21714e-05 0.48043 0.105399 0.292893 0.292936C0.105357 0.480472 0 0.734826 0 1.00004C0 1.26526 0.105357 1.51961 0.292893 1.70715C0.48043 1.89469 0.734784 2.00004 1 2.00004H3.22L5.844 12.5C6.067 13.39 6.864 14 7.781 14H20.251C21.154 14 21.921 13.4 22.158 12.53L24.75 3.00004H22.656L20.25 12H7.78L5.157 1.50004C5.04865 1.06927 4.79888 0.68732 4.44768 0.415356C4.09648 0.143391 3.66418 -0.00285293 3.22 4.21714e-05H1ZM19 14C17.355 14 16 15.355 16 17C16 18.645 17.355 20 19 20C20.645 20 22 18.645 22 17C22 15.355 20.645 14 19 14ZM10 14C8.355 14 7 15.355 7 17C7 18.645 8.355 20 10 20C11.645 20 13 18.645 13 17C13 15.355 11.645 14 10 14ZM13 4.21714e-05V3.00004H10V5.00004H13V8.00004H15V5.00004H18V3.00004H15V4.21714e-05H13ZM10 16C10.564 16 11 16.436 11 17C11 17.564 10.564 18 10 18C9.436 18 9 17.564 9 17C9 16.436 9.436 16 10 16ZM19 16C19.564 16 20 16.436 20 17C20 17.564 19.564 18 19 18C18.436 18 18 17.564 18 17C18 16.436 18.436 16 19 16Z" fill="white"/>
+                    </svg>
+                    <span>ĐĂT HÀNG</span>
+                  </a>
+
+                  <a class="link link-detail text-decoration-underline" href="#">
+                    CHI TIẾT
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="products__item">
+              <div class="thumbnail">
+                <img src="@@webRoot/assets/images/products/product-1.png" alt="">
+              </div>
+
+              <div class="info">
+                <h3 class="info__name">
+                  <a href="#">PHẦN MỀM NGHIỆM THU 360 - HOÀN CÔNG - QLCL - BẢN 2019</a>
+                </h3>
+
+                <div class="info__price">
+                  <span class="txt-price">Giá:</span>
+                  <span class="current-price">4,000,000</span>
+                  <del class="advance-price">6,000,000 VNĐ</del>
+                </div>
+
+                <div class="info__excerpts">
+                  Phần mềm nghiệm thu xây dựng 360 cho kết quả chính xác, dễ sử dụng, dùng thử 30 ngày...
+                </div>
+
+                <div class="info__action">
+                  <a class="link link-download has-bk-icon" href="#" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                      <path d="M13.3339 17.4287C13.3536 17.4539 13.3788 17.4743 13.4076 17.4883C13.4364 17.5024 13.468 17.5096 13.5 17.5096C13.532 17.5096 13.5636 17.5024 13.5924 17.4883C13.6212 17.4743 13.6464 17.4539 13.6661 17.4287L16.6192 13.6925C16.7273 13.5554 16.6298 13.3523 16.4531 13.3523H14.4993V4.42969C14.4993 4.31367 14.4044 4.21875 14.2884 4.21875H12.7063C12.5903 4.21875 12.4954 4.31367 12.4954 4.42969V13.3497H10.5469C10.3702 13.3497 10.2727 13.5527 10.3808 13.6898L13.3339 17.4287ZM23.1504 16.5059H21.5684C21.4523 16.5059 21.3574 16.6008 21.3574 16.7168V20.7773H5.64258V16.7168C5.64258 16.6008 5.54766 16.5059 5.43164 16.5059H3.84961C3.73359 16.5059 3.63867 16.6008 3.63867 16.7168V21.9375C3.63867 22.4042 4.01572 22.7812 4.48242 22.7812H22.5176C22.9843 22.7812 23.3613 22.4042 23.3613 21.9375V16.7168C23.3613 16.6008 23.2664 16.5059 23.1504 16.5059Z" fill="white"/>
+                    </svg>
+
+                    <span>TẢI BỘ CÀI</span>
+                  </a>
+
+                  <a class="link link-order has-bk-icon" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20" fill="none">
+                      <path d="M1 4.21714e-05C0.734784 4.21714e-05 0.48043 0.105399 0.292893 0.292936C0.105357 0.480472 0 0.734826 0 1.00004C0 1.26526 0.105357 1.51961 0.292893 1.70715C0.48043 1.89469 0.734784 2.00004 1 2.00004H3.22L5.844 12.5C6.067 13.39 6.864 14 7.781 14H20.251C21.154 14 21.921 13.4 22.158 12.53L24.75 3.00004H22.656L20.25 12H7.78L5.157 1.50004C5.04865 1.06927 4.79888 0.68732 4.44768 0.415356C4.09648 0.143391 3.66418 -0.00285293 3.22 4.21714e-05H1ZM19 14C17.355 14 16 15.355 16 17C16 18.645 17.355 20 19 20C20.645 20 22 18.645 22 17C22 15.355 20.645 14 19 14ZM10 14C8.355 14 7 15.355 7 17C7 18.645 8.355 20 10 20C11.645 20 13 18.645 13 17C13 15.355 11.645 14 10 14ZM13 4.21714e-05V3.00004H10V5.00004H13V8.00004H15V5.00004H18V3.00004H15V4.21714e-05H13ZM10 16C10.564 16 11 16.436 11 17C11 17.564 10.564 18 10 18C9.436 18 9 17.564 9 17C9 16.436 9.436 16 10 16ZM19 16C19.564 16 20 16.436 20 17C20 17.564 19.564 18 19 18C18.436 18 18 17.564 18 17C18 16.436 18.436 16 19 16Z" fill="white"/>
+                    </svg>
+                    <span>ĐĂT HÀNG</span>
+                  </a>
+
+                  <a class="link link-detail text-decoration-underline" href="#">
+                    CHI TIẾT
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@@include('../layouts/footer.html')
+<!-- jquery lib -->
+<script src="@@webRoot/assets/js/libs/swiper-bundle.min.js"></script>
+<script src="@@webRoot/assets/js/slider.js"></script>
+</body>
+</html>

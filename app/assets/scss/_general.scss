@@ -91,9 +91,41 @@ pre {
   }
 }
 
+.mt-40 {
+  margin-top: 4rem;
+}
+
+.mt-50 {
+  margin-top: 5rem;
+}
+
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-24 {
+  margin-bottom: 2.4rem;
+}
+
+.mb-30 {
+  margin-bottom: 3rem;
+}
+
+.mb-55 {
+  margin-bottom: 5.5rem;
+}
+
+.pt-30 {
+  padding-top: 3rem;
+}
+
 .ptb-30 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.pb-80 {
+  padding-bottom: 8rem;
 }
 
 .radius-5 {
@@ -104,6 +136,11 @@ pre {
 .form-label {
   font-size: 1.4rem;
   line-height: 2.4rem;
+}
+
+.fs-16 {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .fs-18 {
