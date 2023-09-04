@@ -91,6 +91,10 @@ pre {
   }
 }
 
+.mt-30 {
+  margin-top: 3rem;
+}
+
 .mt-40 {
   margin-top: 4rem;
 }
@@ -182,6 +186,33 @@ pre {
   }
 }
 
+.swiper {
+  &.swiper-horizontal {
+    .swiper-pagination-clickable {
+      .swiper-pagination-bullet {
+        position: relative;
+        margin: 0 .9rem;
+        opacity: 1;
+        background-color: #CECECE;
+
+        &.swiper-pagination-bullet-active {
+          background-color: $color-white;
+
+          &:before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            border: 1px solid #6F8FC9;
+            @include square(1.8rem, 50%);
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}
+
 .slider-main {
   .swiper-pagination-bullets {
     &.swiper-pagination-horizontal {
@@ -206,4 +237,29 @@ pre {
 .title-page-line {
   padding-left: 1.2rem;
   border-left: 2px solid $color-red;
+}
+
+.pagination {
+  .page-item {
+    ~ .page-item {
+      margin-left: 1.5rem;
+    }
+
+    .page-link {
+      padding: 7px 1.6rem;
+      border-radius: 5px;
+      border: 1px solid #D3D3D3;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $color-primary;
+      background: #FFF;
+      @include transition();
+
+      &:hover {
+        color: $color-white;
+        border-color: $color-red;
+        background-color: $color-red;
+      }
+    }
+  }
 }
