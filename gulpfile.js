@@ -165,7 +165,7 @@ async function buildApp() {
 exports.buildApp = buildApp
 
 // Task watch
-function watchTask() {
+async function watchTask() {
     server()
 
     // watch style
