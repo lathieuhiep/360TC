@@ -23,9 +23,22 @@
     padding-top: 2.3rem;
     padding-bottom: 1.7rem;
     display: grid;
-    grid-column-gap: 8rem;
-    grid-template-columns: 15rem 1fr auto;
     align-items: center;
+
+    @media screen and (min-width: 1200px){
+      grid-column-gap: 8rem;
+      grid-template-columns: 15rem 1fr auto;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      grid-column-gap: 2rem;
+      grid-template-columns: 10rem 1fr auto;
+    }
+
+    @media screen and (max-width: 991px) {
+      grid-gap: 3rem 1.2rem;
+      grid-template-columns: 1fr auto;
+    }
   }
 
   .form-search {
@@ -56,6 +69,14 @@
       span {
         margin-right: 1.1rem;
       }
+
+      @media screen and (max-width: 991px) {
+        padding: 0 1.2rem;
+
+        span {
+          display: none;
+        }
+      }
     }
   }
 
@@ -66,51 +87,123 @@
 
     &__link {
       display: inline-block;
-      padding: 1.4rem 3.5rem 1.2rem;
       text-align: center;
       border-radius: .5rem;
       background-color: $color-white;
+
+      @media screen and (min-width: 992px) {
+        padding: 1.4rem 3.5rem 1.2rem;
+      }
+
+      @media (max-width: 991px) {
+        font-size: 1.2rem;
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        padding: 1.4rem 2rem 1.2rem;
+      }
+
+      @media (max-width: 767px) {
+        padding: 1.4rem 1rem 1.2rem;
+      }
     }
   }
 
-  &__menu {
-    padding: 0 4rem;
-    height: 6rem;
+  .navbar-main {
     background-color: $color-red;
 
-    ul {
-      height: inherit;
-      display: flex;
+    @media screen and (min-width: 1200px) {
+      padding: 0 4rem;
+    }
 
-      > li {
-        &:not(:last-child) {
-          margin-right: 1.2rem;
+    @media (min-width: 992px) and (max-width: 1199px) {
+      padding: 0 2rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      height: 6rem;
+      border-radius: .5rem;
+
+
+      ul {
+        height: inherit;
+        display: flex;
+
+        > li {
+          &:not(:last-child) {
+            margin-right: 1.2rem;
+          }
+
+          > a {
+            border-radius: .5rem;
+
+            &:hover {
+              color: $color-primary;
+              background-color: $color-white;
+            }
+          }
         }
 
-        > a {
-          padding: .9rem 1.6rem .7rem;
-          border-radius: .5rem;
+        li {
+          position: relative;
+          height: inherit;
+          @include flex-center-vert;
 
-          &:hover {
-            color: $color-primary;
-            background-color: $color-white;
+          a {
+            display: block;
+            color: $color-white;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 2.4rem;
           }
         }
       }
+    }
 
-      li {
-        position: relative;
-        height: inherit;
-        @include flex-center-vert;
+    @media (max-width: 991px) {
+      padding: 0;
+    }
 
-        a {
-          display: block;
-          color: $color-white;
-          font-size: 1.4rem;
-          font-weight: 600;
-          line-height: 2.4rem;
+    ul {
+    > li {
+      > a {
+        @media (min-width: 1200px) {
+          padding: .9rem 1.6rem .7rem;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+          padding: .9rem 1rem .7rem;
         }
       }
+    }
+
+      li {
+        a {
+          @media (max-width: 991px) {
+            display: block;
+            padding: 1rem 1.6rem;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .logo {
+      order: 3;
+    }
+
+    .form-search {
+      order: 1;
+    }
+
+    .user-action {
+      order: 2;
+    }
+
+    .toggle-menu {
+      order: 4
     }
   }
 }
