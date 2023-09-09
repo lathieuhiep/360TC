@@ -23,12 +23,26 @@
     }
 
     &__container {
-      padding: 3rem 3rem 4rem;
       background-color: #F9F9F9;
+
+      @media (min-width: 992px) {
+        padding: 3rem 3rem 4rem;
+      }
+
+      @media (max-width: 991px) {
+        padding: 2rem 1.6rem;
+      }
 
       .heading {
         margin-bottom: 2rem;
-        font-size: 1.8rem;
+
+        @media (min-width: 992px) {
+          font-size: 1.8rem;
+        }
+
+        @media (max-width: 991px) {
+          font-size: 1.6rem;
+        }
       }
     }
 
@@ -59,8 +73,23 @@
         }
 
         .txt {
-          padding-left: 1.8rem;
-          padding-right: 1.8rem;
+          @media (min-width: 992px) {
+            padding-left: 1.8rem;
+            padding-right: 1.8rem;
+          }
+
+          @media (max-width: 991px) {
+            padding-left: 1.4rem;
+            padding-right: 1.4rem;
+          }
+
+          @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 1.4rem;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 1.3rem;
+          }
         }
 
         .txt-name {
@@ -77,16 +106,30 @@
 
   .widget-title {
     margin-bottom: .5rem;
-    font-size: 1.8rem;
+
+    @media (min-width: 992px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 1.6rem;
+    }
   }
 
   .category-widget {
-    padding: 3rem 3rem 3.6rem;
     background-color: rgba(111, 143, 201, 0.9);
     background-image: url("../../../assets/images/bk-category-widget.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (min-width: 992px) {
+      padding: 3rem 3rem 3.6rem;
+    }
+
+    @media (max-width: 991px) {
+      padding: 2rem;
+    }
 
     .widget-title {
       margin-bottom: 2rem;
@@ -157,6 +200,10 @@
     .thumbnail {
       position: relative;
       margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+      }
 
       .name {
         position: absolute;

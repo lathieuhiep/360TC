@@ -240,11 +240,9 @@ pre {
 }
 
 .pagination {
-  .page-item {
-    ~ .page-item {
-      margin-left: 1.5rem;
-    }
+  gap: 1.5rem;
 
+  .page-item {
     .page-link {
       padding: 7px 1.6rem;
       border-radius: 5px;
