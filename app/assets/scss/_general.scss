@@ -224,10 +224,17 @@ pre {
 
 #scroll-top-page {
   position: fixed;
-  right: 6rem;
   bottom: 6rem;
   @include square(6rem, 50%);
   background-color: $color-red;
+
+  @media (min-width: 992px) {
+    right: 6rem;
+  }
+
+  @media (max-width: 991px) {
+    right: 2rem;
+  }
 
   &:hover {
     background-color: $color-slightly-blue;
