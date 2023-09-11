@@ -7,8 +7,23 @@
 
   .posts {
     display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: repeat(3, 1fr);
+
+    @media (min-width: 1200px) {
+      grid-gap: 3rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 1199px) {
+      grid-gap: 2rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 575px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .post-item {
@@ -21,11 +36,21 @@
     }
 
     &:first-child {
-      grid-column: 1 / span 3;
       display: grid;
       grid-gap: 3rem;
-      grid-template-columns: 50% 1fr;
       align-items: center;
+
+      @media (min-width: 1200px) {
+        grid-column: 1 / span 3;
+      }
+
+      @media (min-width: 992px) and (max-width: 1199px) {
+        grid-column: 1 / span 2;
+      }
+
+      @media (min-width: 992px) {
+        grid-template-columns: 50% 1fr;
+      }
 
       .excerpt {
         margin-bottom: 2rem;

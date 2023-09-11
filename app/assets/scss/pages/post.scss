@@ -14,6 +14,13 @@
     a {
       color: $color-bright-blue;
     }
+
+    .post-title {
+      @media (max-width: 991px) {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+      }
+    }
   }
 
   .post-share {
@@ -52,8 +59,15 @@
         border: 1px solid $color-light-gray-4;
         display: grid;
         grid-gap: 3rem;
-        grid-template-columns: 28rem 1fr;
-        align-items: center;
+
+        @media (min-width: 992px) {
+          grid-template-columns: 28rem 1fr;
+          align-items: center;
+        }
+
+        @media (max-width: 480px) and (min-width: 575px) {
+          grid-template-columns: 12rem 1fr;
+        }
 
         ~ .post-item {
           margin-top: 1.5rem;
@@ -62,6 +76,10 @@
         .info {
           .name {
             line-height: 3rem;
+
+            @media (max-width: 992px) {
+              font-size: 1.6rem;
+            }
           }
 
           .excerpt {

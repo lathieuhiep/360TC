@@ -4,7 +4,10 @@
   &__item {
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: 28rem 1fr;
+
+    @media (min-width: 1200px) {
+      grid-template-columns: 28rem 1fr;
+    }
 
     &:not(:last-child) {
       margin-bottom: 4rem;
@@ -15,25 +18,52 @@
     .info {
       &__name {
         margin-bottom: .5rem;
-        font-size: 1.8rem;
-        line-height: 3.4rem;
+
+        @media (min-width: 992px) {
+          font-size: 1.8rem;
+          line-height: 3.4rem;
+        }
+
+        @media (max-width: 991px) {
+          font-size: 1.6rem;
+        }
       }
 
       &__price {
         margin-bottom: 1rem;
-        font-size: 1.8rem;
         font-weight: 700;
         color: $color-red;
 
+        @media (min-width: 992px) {
+          font-size: 1.8rem;
+        }
+
+        @media (max-width: 991px) {
+          font-size: 1.4rem;
+        }
+
         span {
           ~ span {
-            margin-left: 2rem;
+            @media (min-width: 992px) {
+              margin-left: 2rem;
+            }
+
+            @media (max-width: 991px) {
+              margin-left: 1.2rem;
+            }
           }
         }
 
         del {
-          margin-left: 3rem;
           color: #7592C7;
+
+          @media (min-width: 992px) {
+            margin-left: 3rem;
+          }
+
+          @media (max-width: 991px) {
+            margin-left: 2rem;
+          }
         }
       }
 
@@ -48,8 +78,14 @@
         gap: 1.5rem;
         align-items: center;
 
+        @media (max-width: 767px) {
+          flex-direction: column;
+        }
+
         .link {
-          display: inline-block;
+          display: flex;
+          align-items: center;
+          gap: 1.2rem;
           font-weight: 600;
         }
 

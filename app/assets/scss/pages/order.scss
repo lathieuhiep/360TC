@@ -2,7 +2,13 @@
 
 .order-warp {
 	.title-page-line {
-		margin-bottom: 6.8rem;
+		@media (min-width: 992px) {
+			margin-bottom: 6.8rem;
+		}
+
+		@media (max-width: 991px) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	.form-order {
@@ -15,6 +21,26 @@
 		.form-label {
 			font-weight: 500;
 		}
+
+		.row {
+			> div {
+				+ div {
+					@media (max-width: 991px) {
+						margin-top: 2rem;
+					}
+				}
+			}
+
+			&.control-address {
+				@media (min-width: 992px) and (max-width: 1199px) {
+					.col {
+						~ .col {
+							margin-top: 2rem;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.quote {
@@ -23,8 +49,15 @@
 		border-top: 1px solid $color-light-gray-3;
 		display: grid;
 		grid-gap: 3rem;
-		grid-template-columns: 28rem 1fr;
 		align-items: center;
+
+		@media (min-width: 992px) {
+			grid-template-columns: 28rem 1fr;
+		}
+
+		@media (max-width: 991px) {
+
+		}
 
 		&__thumbnail {
 			padding: 1.8rem;

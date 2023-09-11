@@ -28,7 +28,10 @@
     &__item {
       border: 1px solid $color-dark-gray-3;
       display: grid;
-      grid-template-columns: 25rem 1fr;
+
+      @media (min-width: 1200px) {
+        grid-template-columns: 25rem 1fr;
+      }
 
       &:not(:last-child) {
         margin-bottom: 1.5rem;
